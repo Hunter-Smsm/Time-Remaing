@@ -21,11 +21,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 5px;
 }
 
 /* End Globle Roles */
 
 /* Start Timer */
+
+.text {
+    font-size: 10px;
+    text-align: center;
+    color: #9e9e9e;
+}
 
 .main-container {
     background-color: rgb(240, 240, 240);
@@ -88,7 +96,8 @@ body {
 
 @keyframes slide-down-new {
     from {
-        top: -153px;top: -153px;
+        top: -153px;
+        top: -153px;
     }
     to {
         top: 0;
@@ -100,7 +109,7 @@ body {
 }
 
 .down-new {
-    animation: slide-down-new 1s  linear both;
+    animation: slide-down-new 1s linear both;
 }
 
 /* End Timer */
