@@ -4,13 +4,18 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Time remaining</title>
-        <link rel="stylesheet" href="./style.css" />
-        <link rel="stylesheet" href="./media.css" />
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="createNewTime.css" />
+        <link rel="stylesheet" href="media.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     </head>
     <body>
         <div id="root">
-            <div class="text">if you want to make your own cooldown edit the date after ? in the web link with the same pattern the hours is 24 pattern 0000-00-00T00:00:00</div>
+            <div class="text">
+                if you want to make your own cooldown edit the date after ? in
+                the web link with the same pattern the hours is 24 pattern
+                0000-00-00T00:00:00
+            </div>
             <div class="main-container">
                 <div class="timer-container">
                     <div class="days">
@@ -31,6 +36,52 @@
                     <div class="secs">
                         <span class="down-new">00</span>
                         <span class="down-old"></span>
+                    </div>
+                </div>
+                <div class="btns">
+                    <button class="new">New</button>
+                    <button class="pause">Pause</button>
+                    <button class="reset">Reset</button>
+                </div>
+                <div class="new-time">
+                    <div class="options">
+                        <button class="timer">Timer</button>
+                        <button class="target-date">Target a date</button>
+                    </div>
+                    <div class="timer-form">
+                        <div class="inputs">
+                            <div>
+                                <label for="seconds">Seconds:</label>
+                                <input
+                                    type="number"
+                                    placeholder="Seconds"
+                                    id="seconds"
+                                    value="0"
+                                    min="0"
+                                />
+                            </div>
+                            <div>
+                                <label for="mintues">Mintues:</label>
+                                <input
+                                    type="number"
+                                    placeholder="Mintues"
+                                    id="mintues"
+                                    value="0"
+                                    min="0"
+                                />
+                            </div>
+                            <div>
+                                <label for="hours">Hours:</label>
+                                <input
+                                    type="number"
+                                    placeholder="Hours"
+                                    id="hours"
+                                    value="0"
+                                    min="0"
+                                />
+                            </div>
+                        </div>
+                        <button class="createTimer">Create</button>
                     </div>
                 </div>
             </div>
